@@ -1,0 +1,48 @@
+// === пути к шрифтам (относительно файла base.scss)
+// потому что все правила @font-face подключены туда
+// =============================================================================
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), local('Lato Semibold'),
+    url('../../../assets/fonts/latosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), local('Lato Regular'),
+    url('../../../assets/fonts/latoregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), local('Lato Heavy'),
+    url('../../../assets/fonts/latoheavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), local('Lato Light'),
+    url('../../../assets/fonts/latolightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+// @font-face {
+//   font-family: 'Lato';
+//   src: local('Lato'), local('Lato Semibold'),
+//     url('../../../assets/fonts/ptsans-regular.eot?#iefix') format('embedded-opentype'),
+//     url('../../../assets/fonts/ptsans-regular.woff2') format('woff2'),
+//     url('../../../assets/fonts/ptsans-regular.woff') format('woff'),
+//     url('../../../assets/fonts/ptsans-regular.ttf') format('truetype'),
+//     url('../../../assets/fonts/ptsans-regular.svg#pt_sansregular') format('svg');
+//   font-weight: 400;
+//   font-style: normal;
+// }

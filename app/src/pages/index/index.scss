@@ -1,0 +1,99 @@
+@import '../../assets/css/utils/_vars.scss';
+@import '../-common/components/input/_input.scss';
+
+body {
+  background-color: rgb(141, 141, 141);
+}
+
+.row {
+  outline: 1px solid red;
+}
+
+// flow ========================================================================
+.header {
+  padding-top: 65px;
+
+  .logotype {
+    position: absolute;
+    left: 100px;
+    top: -40px;
+  }
+
+  .header-content {
+    max-width: 751px;
+    margin: 0 auto;
+
+    .heading {
+      margin-bottom: 15px;
+    }
+
+    .sub-heading {
+      margin-bottom: 60px;
+    }
+
+    .main-heading {
+      margin-bottom: 15px;
+    }
+
+    .description {
+      margin-bottom: 65px;
+    }
+  }
+
+  .subscribe {
+    margin-bottom: 15px;
+    .input {
+      height: 50px;
+      width: 262px;
+      margin: 0 15px;
+
+      line-height: 50px;
+    }
+  }
+
+  .agree{
+    margin-bottom: 130px;
+  }
+}
+
+// theme =======================================================================
+.header {
+  color: $colorFontWhite;
+  background: url('../-common/components/header/bg.jpg') center center/cover no-repeat;
+
+  .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  .sub-heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .main-heading {
+    color: $colorFontGold;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .agree {
+    color: $colorFontlight;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+}
