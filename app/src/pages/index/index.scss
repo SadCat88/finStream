@@ -221,7 +221,7 @@
 // === flow
 .subscribe {
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
   .subscribe__description {
     width: 100%;
@@ -231,7 +231,6 @@
   }
 
   .subscribe__button {
-    display: block;
     margin: 0 auto;
   }
 }
@@ -239,7 +238,7 @@
 // === theme
 .subscribe {
   background: #2b1431 URL("./img/bg.jpg") center bottom/cover no-repeat;
-  
+
   .subscribe__description {
     font-size: 24px;
     line-height: 29px;
@@ -251,5 +250,240 @@
   .subscribe__button {
     font-weight: 500;
     font-size: 15px;
+  }
+}
+
+// lesson plan =================================================================
+
+// === flow
+.lesson-plan {
+  padding-top: 70px;
+
+  .plan-card {
+    margin: 0 auto;
+    padding-top: 37px;
+    padding-bottom: 27px;
+    max-width: 752px;
+    margin-bottom: 70px;
+
+    .wrapper {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    .plan-card__heading {
+      margin-bottom: 40px;
+    }
+
+    .plan-list {
+      margin-bottom: 30px;
+      padding-left: 30px;
+
+      .plan-list__item:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+
+    .plan-card__description {
+      margin-bottom: 40px;
+    }
+
+    .plan-card__second-heading {
+      margin-bottom: 40px;
+      padding: 10px 0;
+    }
+
+    .result-list {
+      margin-bottom: 30px;
+      padding-left: 110px;
+      padding-right: 70px;
+
+      .result-list__item:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  .conviction {
+    margin: 0 auto;
+
+    .conviction__heading {
+      max-width: 555px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+    .conviction-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: space-around;
+      margin-bottom: 5px;
+
+      .conviction-list__item {
+        position: relative;
+
+        margin-bottom: 40px;
+        max-width: 355px;
+        min-width: 320px;
+
+        padding-top: 15px;
+      }
+    }
+
+    .subscribe__button {
+      margin: 0 auto;
+    }
+  }
+}
+
+// === theme
+
+.lesson-plan {
+  color: $colorFontBlack;
+  text-align: left;
+
+  .plan-card {
+    border: 3px solid $colorHighlight;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    .plan-card__heading {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .plan-list {
+      .plan-list__item {
+        position: relative;
+
+        &::before {
+          content: "";
+
+          position: absolute;
+          left: -30px;
+          top: 6px;
+
+          width: 10px;
+          height: 10px;
+          background: $colorHighlight;
+
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .plan-card__description {
+      font-weight: bold;
+    }
+
+    .plan-card__second-heading {
+      position: relative;
+      left: 0;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      color: $colorBg;
+
+      &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $colorHighlight;
+      }
+    }
+
+    .result-list {
+      .result-list__item {
+        position: relative;
+
+        &::before {
+          content: "";
+
+          position: absolute;
+          left: -60px;
+          top: 0;
+
+          width: 40px;
+          height: 40px;
+          background: $colorHighlight;
+
+          border-radius: 50%;
+        }
+
+        &::after {
+          position: absolute;
+
+          left: -47px;
+          top: 0;
+
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 40px;
+          color: $colorBg;
+        }
+
+        &.item_1::after {
+          content: "1";
+        }
+
+        &.item_2::after {
+          content: "2";
+        }
+
+        &.item_3::after {
+          content: "3";
+        }
+      }
+    }
+  }
+
+  .conviction {
+    .conviction__heading {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .conviction-list {
+      .conviction-list__item {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        border-top: 1px solid $colorHighlight;
+
+        &::before {
+          content: "";
+
+          position: absolute;
+          top: -7px;
+          left: 50%;
+          transform: translate(-50%);
+
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+
+          background-color: $colorHighlight;
+        }
+      }
+    }
   }
 }
