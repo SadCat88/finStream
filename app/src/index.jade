@@ -13,23 +13,38 @@ html(lang="ru")
 
   body
     .center-line-temporality
-    header.header
+
+    include ./pages/-common/components/header/header.jade
+
+    section.questions
       .container.text-center
-        .row
-          .col
-            a(href="#").logotype
-              img.logotype__img(src="./pages/-common/img/logo.png" alt="logotype")
-            .header-content
-              p.heading БЕСПЛАТНЫЙ ОНЛАЙН-ПРАКТИКУМ АЛОРИИ СОБИНОВОЙ
-              p.sub-heading 18 февраля в 20:00 мск
-              h1.main-heading АКТИВАЦИЯ ПОТОКА ФИНАНСОВОЙ УДАЧИ
-              p.description На практикуме вы разблокируете свой денежный поток и научитесь подключаться к Эгрегору денег, в результате чего увеличите благосостояние и улучшите качество своей жизни
-        .row
-          .col
-            form.subscribe(method="post" action="https://echo.htmlacademy.ru")
-              input.input.input_round.input_white(type="text" name="email" placeholder="Введите e-mail" required)
-              input.input.input_round.input_red(type="submit" name="submit" value="ЗАПИСАТЬСЯ БЕСПЛАТНО")
-            p.agree Я согласен на обработку моих персональных данных в соответствии с Условиями
+
+        h2.question ЧТО МЕШАЕТ ВАМ 
+          span.highlight БРАТЬ ОТ ЖИЗНИ БОЛЬШЕ?
+        .row.item
+          .col-5
+            img.image.image_left(src="./pages/index/img/mind.jpg" alt="mind")
+          .col-7.content.text-left
+            p.paragraph.
+              Каждый человек с рождения наделен очень большим и мощным потенциалом финансовой удачи. В идеальной картине удача сопровождает нас во всех начинаниях: при поиске работы, в бизнесе, денежных вложениях, бытовых тратах. 
+            p.paragraph.paragraph_left-arrow.
+              Но большинство людей этот #[b потенциал неосознанно блокируют:] страхами новых начинаний, боязнью потерпеть неудачу, отказом использовать новые возможности, постоянно находясь в зоне комфорта, неверием в собственные силы.
+            p.paragraph.
+              В результате этих поступков или бездействия человек отталкивает от себя финансовую удачу. Как следствие испытывает нужду.
+              
+        h2.question КАК ВЫБРАТЬСЯ из финансового тупика 
+          span.highlight и повысить КАЧЕСТВО СВОЕЙ ЖИЗНИ?
+        .row.justify-content-end
+          .col-7.content.text-right
+            p.paragraph.
+              За наш материальный достаток отвечает Эгрегор финансовой удачи и очень важно выстроить с ним канал взаимодействия. В результате чего вы повысите свои внутренние вибрации, уберете страхи и притянете к себе денежные возможности. 
+            p.paragraph.paragraph_right-arrow.
+              Денежный эгрегор резонирует со смелыми желаниями и решительными действиями. #[b Негативные мысли, мнительность, нерешительность разрушают вашу связь с денежным Эгрегором и перекрывают энергию денег.]
+            p.paragraph.
+              Существует способ, чтобы подключиться к Эгрегору денег, я расскажу о нем на практикуме.
+          .col-5
+            img.image.image_right(src="./pages/index/img/mind-and-cash.jpg" alt="mind")
+
 
     script(src="./assets/vendors/bootstrap/js/jquery-3.4.1.min.js")
     //- script(src="./assets/vendors/bootstrap/js/popper.min.js")

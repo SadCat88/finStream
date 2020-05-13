@@ -43,7 +43,8 @@ body {
   overflow-x: hidden;
   font-family: 'Lato', serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #FFFFFF; }
 
 p {
   margin: 0;
