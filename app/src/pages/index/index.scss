@@ -258,6 +258,20 @@
 // === flow
 .lesson-plan {
   padding-top: 70px;
+  padding-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 44%;
+    background-color: $colorBgSecond;
+  }
 
   .plan-card {
     margin: 0 auto;
@@ -343,9 +357,12 @@
   color: $colorFontBlack;
   text-align: left;
 
+
+
   .plan-card {
     border: 3px solid $colorHighlight;
     border-radius: 10px;
+    background-color: $colorBg;
 
     font-style: normal;
     font-weight: normal;
@@ -485,5 +502,88 @@
         }
       }
     }
+  }
+}
+
+// about =======================================================================
+
+// === flow
+.about {
+  padding-top: 40px;
+
+  .about-content {
+    margin-bottom: 65px;
+  }
+
+  .about__heading {
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .about-list {
+    padding-left: 20px;
+
+    .about-list__item {}
+  }
+
+}
+
+// === theme
+.about {
+  .about__heading {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about-list {
+    .about-list__item {
+      position: relative;
+
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 5px;
+        left: -25px;
+
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+        background: #765F7D;
+      }
+    }
+  }
+
+}
+
+
+
+.feedback {
+  position: relative;
+
+  background-color: blue;
+  height: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: -1;
+
+    background-color: green;
   }
 }

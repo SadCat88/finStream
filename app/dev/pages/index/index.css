@@ -178,7 +178,18 @@
     font-size: 15px; }
 
 .lesson-plan {
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 40px;
+  position: relative; }
+  .lesson-plan::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 44%;
+    background-color: #FFF8EF; }
   .lesson-plan .plan-card {
     margin: 0 auto;
     padding-top: 37px;
@@ -233,6 +244,7 @@
   .lesson-plan .plan-card {
     border: 3px solid #DDA859;
     border-radius: 10px;
+    background-color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -321,5 +333,51 @@
       height: 15px;
       border-radius: 50%;
       background-color: #DDA859; }
+
+.about {
+  padding-top: 40px; }
+  .about .about-content {
+    margin-bottom: 65px; }
+  .about .about__heading {
+    padding-top: 15px;
+    margin-bottom: 30px; }
+  .about .about-list {
+    padding-left: 20px; }
+
+.about .about__heading {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px; }
+
+.about .about-list .about-list__item {
+  position: relative;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px; }
+  .about .about-list .about-list__item:not(:last-child) {
+    margin-bottom: 22px; }
+  .about .about-list .about-list__item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #765F7D; }
+
+.feedback {
+  position: relative;
+  background-color: blue;
+  height: 200px; }
+  .feedback::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: -1;
+    background-color: green; }
 
 /*# sourceMappingURL=index.css.map */
