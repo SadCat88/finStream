@@ -1,26 +1,52 @@
+a {
+  border-radius: 4px;
+}
+
+.input {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(109, 156, 255);
+  }
+}
+
 .input {
   height: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  
+
   line-height: 50px;
   border: none;
   text-transform: uppercase;
+  text-align: center;
+
 
   &.button {
     display: block;
-    
+
     height: 60px;
     line-height: 60px;
     padding: 0 60px;
 
+    @media (max-width: 391px) {
+      padding: 0 15px;
+      width: 100%;
+    }
+
     text-align: center;
     font-weight: 500;
     font-size: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &.input_round {
     border-radius: 35px;
+  }
+
+  &.input_square {
+    border-radius: 10px;
   }
 
   &.input_white {
@@ -31,5 +57,9 @@
   &.input_red {
     background-color: #DB0707;
     color: #ffffff
+  }
+
+  &.input_red:hover {
+    background-color: #f75454;
   }
 }

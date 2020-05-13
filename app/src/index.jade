@@ -12,7 +12,7 @@ html(lang="ru")
     title Активация потока финансовой удачи/ Алория
 
   body
-    .center-line-temporality
+    //- .center-line-temporality
 
     include ./pages/-common/components/header/header.jade
 
@@ -21,7 +21,7 @@ html(lang="ru")
 
         h2.question ЧТО МЕШАЕТ ВАМ 
           span.highlight БРАТЬ ОТ ЖИЗНИ БОЛЬШЕ?
-        .row.item
+        .row.item.row_1
           .col-5
             img.image.image_left(src="./pages/index/img/mind.jpg" alt="mind")
           .col-7.content.text-left
@@ -34,25 +34,22 @@ html(lang="ru")
 
         h2.question КАК ВЫБРАТЬСЯ из финансового тупика 
           span.highlight и повысить КАЧЕСТВО СВОЕЙ ЖИЗНИ?
-        .row.justify-content-end
-          .col-7.content.text-right
+        .row.justify-content-end.flip.row_2
+          .col-7.content.text-md-right.text-sm-left
             p.paragraph.
               За наш материальный достаток отвечает Эгрегор финансовой удачи и очень важно выстроить с ним канал взаимодействия. В результате чего вы повысите свои внутренние вибрации, уберете страхи и притянете к себе денежные возможности. 
             p.paragraph.paragraph_right-arrow.
               Денежный эгрегор резонирует со смелыми желаниями и решительными действиями. #[b Негативные мысли, мнительность, нерешительность разрушают вашу связь с денежным Эгрегором и перекрывают энергию денег.]
             p.paragraph.
               Существует способ, чтобы подключиться к Эгрегору денег, я расскажу о нем на практикуме.
-          .col-5
+          .col-5.image
             img.image.image_right(src="./pages/index/img/mind-and-cash.jpg" alt="mind")
 
     section.subscribe
       .container.text-center
         .row.text-center
           p.subscribe__description.
-            На практикуме вы с помощью специальной техники <br>
-            подключитесь к финансовому потоку удачи, который дан вам при рождении, <br>
-            тем самым активируете его и привлечете новые финансовые возможности <br>
-            на свою линию жизни
+            На практикуме вы с помощью специальной техники подключитесь к финансовому потоку удачи, который дан вам при рождении, тем самым активируете его и привлечете новые финансовые возможности на свою линию жизни
           a(href="#").subscribe__button.input.input_round.input_red.button ЗАПИСАТЬСЯ НА ПРАКТИКУМ
 
     section.lesson-plan
@@ -89,7 +86,7 @@ html(lang="ru")
 
     section.about
       .container
-        .row.about-content
+        .row.about-content.row_1
           .col-5
             img(src="./pages/index/img/photo_1.jpg" alt="photo")
           .col-7
@@ -99,24 +96,113 @@ html(lang="ru")
               li.about-list__item Мастер магического символизма - изготовления и зарядки обрегов,талисманов и амулетов. Работает с узелковой и заговорной магией.
               li.about-list__item Основатель трех эзотерических школ - Рун, Таро и Родологии.
               li.about-list__item Специалист по тантрическим практикам - подключение к денежным потокам, обладает тайными знаниями даосских практик.
-              li.about-list__item С 2013 года ПОМОГАЕТ ЛЮДЯМ при помощи магии Рун, Таро и Родологии РЕШАТЬ СЛОЖНЫЕ ЗАДАЧИ и побеждать в почти безвыходных ситуациях.
+              li.about-list__item С 2013 года ПОМОГАЕТ ЛЮДЯМ при помощи магии Рун, Таро и Родологии #[b РЕШАТЬ СЛОЖНЫЕ ЗАДАЧИ] и побеждать в почти безвыходных ситуациях.
 
-        .row
+        .row.row_2
           .col
             img(src="./pages/index/img/photo_2.jpg" alt="photo")
           .col
             img(src="./pages/index/img/photo_3.jpg" alt="photo")
           .col
             img(src="./pages/index/img/photo_4.jpg" alt="photo")
-    
+
     section.feedback
-      
+      .container.text-center
+        .row
+          h2.feedback__heading Какие результаты получают мои ученики:
 
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_1.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Валерий
+                h3.header-card__title В течение первого месяца обучения мои доходы выросли в 5 раз
 
+            .feedback-card__content
+              include ./pages/index/_comment_1.jade
 
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_2.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Наталья Горячева
+                h3.header-card__title Ритуалы с таро улучшили финансовое положение: практически сразу получила очень большую премию
 
+            .feedback-card__content
+              include ./pages/index/_comment_2.jade
 
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_3.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Светлана
+                h3.header-card__title У меня начался новый этап в жизни. Раскрылся дремавший до сих пор потенциал
 
+            .feedback-card__content
+              include ./pages/index/_comment_3.jade
+
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_4.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Натали
+                h3.header-card__title Увеличился поток клиентов в 3 раза и, соответственно, доход
+
+            .feedback-card__content
+              include ./pages/index/_comment_4.jade
+
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_5.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Ирина
+                h3.header-card__title Теперь я могу зарабатывать деньги, помогая другим!
+
+            .feedback-card__content
+              include ./pages/index/_comment_5.jade
+
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Валентина
+                h3.header-card__title ПРИШЛИ ДЕНЬГИ С ПОМОЩЬЮ ЭФИРНОГО ПОМОЩНИКА
+
+            .feedback-card__content
+              include ./pages/index/_comment_6.jade
+
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_7.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Татьяна Коваленко
+                h3.header-card__title 
+
+            .feedback-card__content
+              include ./pages/index/_comment_7.jade
+
+        .row
+          .feedback-card
+            .header-card
+              img.header-card__avatar(src="./pages/index/img/avatar_8.jpg" alt="avatar" width="58" height="55")
+              .wrapper
+                p.header-card__username Оксана Скрипник
+                h3.header-card__title 
+
+            .feedback-card__content
+              include ./pages/index/_comment_8.jade
+
+        .row.d-flex.justify-content-center
+          a(href="#").subscribe__button.input.input_round.input_red.button ЗАПИСАТЬСЯ НА ПРАКТИКУМ
+    
+    include ./pages/-common/components/footer/footer.jade
 
     script(src="./assets/vendors/bootstrap/js/jquery-3.4.1.min.js")
     //- script(src="./assets/vendors/bootstrap/js/popper.min.js")
