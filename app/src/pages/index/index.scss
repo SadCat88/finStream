@@ -37,15 +37,12 @@
     }
   }
 
-  .subscribe {
+  .header-subscribe {
     margin-bottom: 15px;
 
     .input {
-      height: 50px;
       width: 262px;
       margin: 0 15px;
-
-      line-height: 50px;
     }
   }
 }
@@ -99,6 +96,7 @@
   padding-top: 75px;
 
   .question {
+    width: 100%;
     margin-bottom: 35px;
     max-width: 941px;
     margin-left: auto;
@@ -215,5 +213,43 @@
       }
 
     }
+  }
+}
+
+// subscribe ===================================================================
+
+// === flow
+.subscribe {
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  .subscribe__description {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .subscribe__button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// === theme
+.subscribe {
+  background: #2b1431 URL("./img/bg.jpg") center bottom/cover no-repeat;
+  
+  .subscribe__description {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+    text-align: center;
+    color: $colorFontGold;
+  }
+
+  .subscribe__button {
+    font-weight: 500;
+    font-size: 15px;
   }
 }

@@ -1,7 +1,7 @@
 # Документация
 
 **GitHub Pages:**<br>
-https://sadcat88.github.io/finStream/app/prod/<br>
+https://sadcat88.github.io/finStream/app/prod/index.html<br>
 
 ## Описание:
 
